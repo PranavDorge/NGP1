@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Navjeevan Gramoday Pratishthan (NGP)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-gray-800">
+                    <a href="/"><img src="assets/images/logo.png" alt="NGP Logo" class="h-12"></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-500">About Us</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-500">Projects</a>
+                    <a href="impact.html" class="text-gray-600 hover:text-blue-500">Impact</a>
+                    <a href="get-involved.html" class="text-gray-600 hover:text-blue-500">Get Involved</a>
+                    <a href="contact.html" class="text-blue-500 font-semibold">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 hover:text-blue-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="index.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+                <a href="about.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">About Us</a>
+                <a href="projects.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Projects</a>
+                <a href="impact.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Impact</a>
+                <a href="get-involved.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Get Involved</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm text-blue-500 bg-gray-100">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-blue-600 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl font-extrabold">Contact Us</h1>
+                <p class="mt-4 text-xl">We'd love to hear from you. Reach out with any questions, inquiries, or partnership proposals.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Information -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+                        <div class="space-y-6 text-gray-700">
+                            <div>
+                                <h3 class="font-semibold">Contact Person:</h3>
+                                <p>Mr. Rajendra Pawar, President</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Address:</h3>
+                                <p>Plot No-61, Ashtavinayak Colony, Opp. Tuljabhavani Temple, Pipeline Road, Savedi, Ahmednagar (Maharashtra-India) - 414003</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Phone:</h3>
+                                <p>+91 9850216150</p>
+                                <p>+91 9881509841</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Email:</h3>
+                                <p><a href="mailto:ngp1994@gmail.com" class="text-blue-500 hover:underline">ngp1994@gmail.com</a></p>
+                            </div>
+                             <div>
+                                <h3 class="font-semibold">Website:</h3>
+                                <p><a href="http://navjeevanfoundation.org" target="_blank" class="text-blue-500 hover:underline">http://navjeevanfoundation.org</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Send on WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.188334460015!2d74.7219983148596!3d19.18663698702384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcbb6b6cfb2b7b%3A0x6b492d5d898cf483!2sAshtavinayak%20Colony%2C%20Ahmednagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1678886043210!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navjeevan Gramoday Pratishthan</h3>
+                    <p class="text-gray-400">Working since 1994 to create a sustainable and homogeneous society based on legitimate rights, equality, and justice.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                        <li><a href="impact.html" class="hover:text-blue-400">Impact</a></li>
+                        <li><a href="get-involved.html" class="hover:text-blue-400">Get Involved</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Mr. Rajendra Pawar, President</p>
+                    <p class="text-gray-400">Plot No-61, Ashtavinayak Colony, Opp. Tuljabhavani Temple, Pipeline Road, Savedi, Ahmednagar (Maharashtra-India) -414003</p>
+                    <p class="text-gray-400">Ph: +91 9850216150 / 9881509841</p>
+                    <p class="text-gray-400">Email: <a href="mailto:ngp1994@gmail.com" class="hover:text-blue-400">ngp1994@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 Navjeevan Gramoday Pratishthan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappNumber = '9421467194';
+            const whatsappMessage = `Dear NGP Team,\n\nThe following inquiry was submitted through your website contact form:\n\n*Name:* ${name}\n*Email:* ${email}\n\n*Message:*\n${message}\n\nThank you.`;
+
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html> 
